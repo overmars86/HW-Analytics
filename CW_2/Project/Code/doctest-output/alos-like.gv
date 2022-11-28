@@ -1,0 +1,30 @@
+digraph "alos-like" {
+	A [label="3d35"]
+	B [label=c199]
+	C [label="05a1"]
+	D [label=f2da]
+	H [label="7ad8"]
+	V [label=bee8]
+	N [label=c026]
+	Z [label=8945]
+	X [label=c14b]
+	W [label=e2ea]
+	Q [label="8dde"]
+	S [label="83f4"]
+	R [label="6ae1"]
+	T [label=8467]
+	O [label=f83d]
+	P [label="88ff"]
+	A -> H
+	B -> V
+	C -> N
+	D -> Z
+	E -> X
+	F -> W
+	G -> Q
+	H -> S
+	I -> R
+	K -> T
+	L -> O
+	M -> P
+}

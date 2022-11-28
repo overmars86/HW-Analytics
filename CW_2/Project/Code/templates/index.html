@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW Analytics App</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav_bar_brand">
+            <img src="/static/logo.svg" alt="logo"> HW Analytics App
+        </div>
+        <div class="top" align="rigth">
+        <a href="#" class="signin" align="right">Sign in</a>
+        <a href="\about" class="about" align="right">About</a>
+        </div>
+    </header>
+    <main>
+        <section class="welcome">
+            <article class="welcome_2">
+                <div class="drop" align="right">
+                    <form class="droppy" id="droppy_1" action="/" method="post" value="0">
+                    <label for="drop_1"> Select the dataset</label>
+                    <select name="drop_l" id="drop1">
+                        <option value="0">sample small Dataset</option>
+                        <option value="1">100K Dataset</option>
+                        <option value="2">400K Dataset</option>
+                        <option value="3">600K Dataset</option>
+                        <option value="4">3M Dataset</option>
+                    </select>
+                    <button type="select">Select </button>
+                </form>
+                </div>
+                <div>
+                <h2>Welcome to Heriot-Watt Analytics App</h2>
+                <p>
+                    This app will help you to analyize issue.com activity. The issuu.com platform is a web site for publishing documents. 
+It is widely used by many on-line publishers and currently hosts about 15 million documents. 
+The web site tracks usage of the site and makes the resulting, anonymised data available to a wider audience. 
+For example, it records who views a certain document, the browser used for viewing it, the way how the user arrived 
+at this page
+                </div>
+                </p>
+            </article>
+        </section>
+        <section class="menue">
+            <div class="men_header">
+                <h2 class="men_header_h2">Please select how you want to analyize</h2>
+            </div>
+            <div class="men_rec" align="left">
+                <a href="\document"> Analyize by Document
+                <!-- <img src="/static/analy_by_doc.png" alt="pic" style="width: 106px;height: 106px;"> -->
+                </a>
+            </div>
+            <div class="men_rec_6" align="left">
+                <a href="\listbydoc"> List by Document</a>
+            </div>
+            <div class="men_rec_5" align="right">
+                <a href="\listbyuser"> List by User</a>
+            </div>
+            <div class="men_rec_4" align="right">
+                <a href="/time"> Analyize by Time spent</a>
+            </div>
+            
+            <div class="men_rec_3" align="center">
+                <a href="/browser"> Analyize by browser and OS</a>
+            </div>
+            <div class="men_rec_7" align="center">
+                <a href="/also_like"> Users' also Like</a>
+            </div>
+            
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_cont">
+            <section class="left">
+                <a class="footer_item">Made by Mohamed Hatem & Mohamed Abdelsalam 2022</a>
+            </section>
+            <section class="right">
+                <div class="footer_column">
+                    <a class="footer_item">Email: ma2051@hw.ac.uk</a>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>

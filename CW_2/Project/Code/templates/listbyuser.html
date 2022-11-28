@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW Analytics App - List by user</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav_bar_brand">
+            <img src="/static/logo.svg" alt="logo"> HW Analytics App
+        </div>
+        <a href="/" class="home">Home</a>
+        <a href="\about" class="about">About</a>
+    </header>
+    <main>
+        <div align="right">
+            <h4>{{ dataset }}</h4>
+        </div>
+        <section class="input_3">
+            <article>
+                <h3 class="input_plc">Please enter the User UUID</h3>
+                <form class="form3" method="POST" target="_blank", id="form1_search_1" 
+                action="{{ url_for('table_2')}}">
+                    <label for="doc_uuid"> User UUID</label>
+                    <span class="clearable">
+                    <input type="text" name="user_uuid" id="iduser_uuid_2" value="">
+                    <i class="clearable__clear">&times;</i>
+                    </span>
+                    <button type="search">Search </button>
+                    <input type="reset" value="reset">
+                </form>
+                <script>("form1_search").reset();</script>
+            </article>
+            </section>
+            <section class="show_table_1">
+                <div align="center">
+                    <table>
+                        <h1>
+                        <!--Displaying the converted table-->
+                             {% for table in tables %}
+                            <h2>{{titles[loop.index]}}</h2>                            
+                            {{ table|safe }}
+                            {% endfor %}     
+                        </h1> 
+                    </table>
+                </div>
+            </section>
+     
+    </main>
+    <footer class="footer">
+        <div class="footer_cont">
+            <section class="left">
+                <a class="footer_item">Made by Mohamed Hatem & Mohamed Abdelsalam 2022</a>
+            </section>
+            <section class="right">
+                <div class="footer_column">
+                    <a class="footer_item">Email: ma2051@hw.ac.uk</a>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
